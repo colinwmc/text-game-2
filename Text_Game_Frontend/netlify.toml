@@ -1,5 +1,5 @@
 [build]
 command = "npm run build:prod"
-base = ""
+base = "dist"
 functions = "netlify/functions"
 publish = "dist/Text_Game_Frontend/browser"
