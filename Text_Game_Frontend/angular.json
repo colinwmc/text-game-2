@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Text_Game_Frontend:build:production"
+              "buildTarget": "Text_Game_Frontend:build:production"
             },
             "development": {
-              "browserTarget": "Text_Game_Frontend:build:development"
+              "buildTarget": "Text_Game_Frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Text_Game_Frontend:build"
+            "buildTarget": "Text_Game_Frontend:build"
           }
         },
         "test": {
