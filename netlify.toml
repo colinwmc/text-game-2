@@ -1,5 +1,5 @@
 [build]
 command = "ng build"
-base = "dist"
+base = ""
 functions = "netlify/functions"
 publish = "dist/Text_Game_Frontend/browser"
