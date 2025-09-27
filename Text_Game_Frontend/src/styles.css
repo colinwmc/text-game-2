@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: vivaldi;
+    src: url(./assets/Font/vivaldi.zip);
+}
+
+@font-face {
+    font-family: corsiva;
+    src: url(./assets/Font/Monotype-Corsiva-Regular.ttf);
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    cursor: url("./assets/Font/cursor2.cur"), auto;
+    /* cursor: pointer; */
+}
+
+.background {
+    height: 80vh;
+    width: 100vw;
+    position: fixed;
+}
+
+app-ui-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}

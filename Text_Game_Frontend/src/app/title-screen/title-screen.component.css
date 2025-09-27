@@ -1,0 +1,115 @@
+.menu-background img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* cursor: url("../../assets/Font/Middle-Ages--cursor--SweezyCursors.cur"), move; */
+}
+
+.menu-wrapper {
+    background-color: black;
+    /* cursor: url("../../assets/Final Picks/Item and Spell Icons/bomb.png"); */
+}
+
+.menu-background {
+    background-color: black;
+}
+
+.menu-padding-top {
+    height: 6.5%;
+}
+
+.menu-options,
+.PC-profile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+app-pc-profile {
+    width: 100%;
+    height: 85%;
+}
+
+.subtitle {
+    color: gold;
+    font-size: 4.5rem;
+    font-family: corsiva;
+    /* padding-top: 6.5%; */
+}
+
+.PC-array {
+    display: flex;
+    margin-top: 24px;
+    height: 50%;
+}
+
+.PC {
+    margin-right: 48px;
+    height: 100%;
+    width: 30%;
+}
+
+.PC-portrait {
+    border: 10px solid gold;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 100%;
+}
+
+.PC-portrait img {
+    /* height: 360px; */
+    height: 100%;
+    /* width: 240px; */
+    width: 100%
+}
+
+.PC-name {
+    color: gold;
+    font-size: 3.75rem;
+    font-family: corsiva;
+    text-align: center;
+    background-color: #253e54;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom: 10px solid gold;
+    border-left: 10px solid gold;
+    border-right: 10px solid gold;
+}
+
+.button-box {
+    display: flex;
+    width: 60%;
+    height: 15%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.menu-back-button,
+.menu-start-button {
+    background-color: #253e54;
+    color: gold;
+    border: 5px solid gold;
+    border-radius: 5px;
+    font-family: corsiva;
+    font-size: 3.92vw;
+    height: 70%;
+    cursor: url("../../assets/Font/cursor2.cur"), auto;
+}
+
+.menu-back-button {
+    width: 45%;
+}
+
+.menu-start-button {
+    width: 45%;
+}
