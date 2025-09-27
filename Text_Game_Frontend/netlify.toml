@@ -1,4 +1,5 @@
 [build]
+command = "npm run build:prod"
 base = ""
 functions = "netlify/functions"
 publish = "dist/Text_Game_Frontend/browser"
