@@ -78,7 +78,7 @@ export class FrogMerchantEncounterComponent implements OnInit {
         this.options = [{ id: 1, text: 'Continue >' }];
         break;
       case 1:
-        this.portraitID = "../../assets/Final Picks/Characters/frog_merchant_5.jpg";
+        this.portraitID = "assets/Final Picks/Characters/frog_merchant_5.jpg";
         this.narration = '';
         this.dialogue.unshift(this.npcTag + '"Well howdy ho there partner. I bid thee greetings and welcome you most kindly into this fine forest." You turn to see a large frog in a straw hat sitting beside a cart filled with various fruits.');
         this.options = [
@@ -154,12 +154,12 @@ export class FrogMerchantEncounterComponent implements OnInit {
         this.dialogue.unshift(this.npcTag + 'The frog looks at his hands, seemingly just as surprised by what he sees as you were. "Uhhhhh . . . no I don\'t." He mutters as a puff of smoke surrounds him.');
         setTimeout(() => {
           let magic = new Audio();
-          magic.src = "../assets/Sound Effects/sound-effect-twinklesparkle-115095.mp3";
+          magic.src = "assets/Sound Effects/sound-effect-twinklesparkle-115095.mp3";
           magic.load();
           magic.play();
-          this.portraitID = "../../assets/Final Picks/Characters/frog_merchant_shift.png";
+          this.portraitID = "assets/Final Picks/Characters/frog_merchant_shift.png";
           setTimeout(() => {
-            this.portraitID = "../../assets/Final Picks/Characters/frog_merchant_4.jpg";
+            this.portraitID = "assets/Final Picks/Characters/frog_merchant_4.jpg";
           }, 500);
         }, 4000);
 
@@ -492,7 +492,7 @@ export class FrogMerchantEncounterComponent implements OnInit {
         let outcome = this.sharedService.castAttackSpell(3, 10, event.id === 37 ? 'advantage' : event.id === 46 ? 'none' : 'disadvantage')
         if (outcome === 'frog') {
           this.dialogue.unshift('(Hit!) A bolt of magic flies from your fingertips and hits him in the chest. His body is twisted and morphed into a frog! Well, a different frog. Not a talking fae frog in a hat, just a normal frog.');
-          this.portraitID = "../../assets/Final Picks/Characters/hex-frog.jpg";
+          this.portraitID = "assets/Final Picks/Characters/hex-frog.jpg";
           this.options = [
             { id: 28, text: '"Well, that takes care of that then." You saying striding deeper into the woods.' },
             { id: 28, text: '"Uh . . . hopefully you don\'t mind being a different sort of frog, Melvin." You sidle past the frog, and continue onwards' }
@@ -507,7 +507,7 @@ export class FrogMerchantEncounterComponent implements OnInit {
           ]
         } else if (outcome === 'purple') {
           this.dialogue.unshift('(Hit!) A bolt of magic flies from your fingertips and hits him in the chest. The frog cries out in fear, waiting for his doom. A second later, he looks at his hands in shock. "You . . . you made me purple, you little shit!" He yells, launching himself at you, blind with rage, and shoves the fruit into your mouth.');
-          this.portraitID = this.hasFixedFingers ? "../../assets/Final Picks/Characters/frog_merchant_4_purple.jpg.png" : "../../assets/Final Picks/Characters/frog_merchant_5_purple.jpg.png";
+          this.portraitID = this.hasFixedFingers ? "assets/Final Picks/Characters/frog_merchant_4_purple.jpg.png" : "assets/Final Picks/Characters/frog_merchant_5_purple.jpg.png";
           this.sharedService.takeDamage(10);
           this.options = [
             { id: 24, text: '"Oh dear . . ."' },
@@ -617,7 +617,7 @@ export class FrogMerchantEncounterComponent implements OnInit {
         } else {
           setTimeout(() => {
             let fart = new Audio();
-            fart.src = "../assets/Sound Effects/fart.mp3";
+            fart.src = "assets/Sound Effects/fart.mp3";
             fart.load();
             fart.play();
           }, 1500);
@@ -704,7 +704,7 @@ export class FrogMerchantEncounterComponent implements OnInit {
   }
 
   frogDies() {
-    this.portraitID = this.hasFixedFingers ? "../../assets/Final Picks/Characters/frog_merchant_4_dead.jpg" : "../../assets/Final Picks/Characters/frog_merchant_5_dead.jpg";
+    this.portraitID = this.hasFixedFingers ? "assets/Final Picks/Characters/frog_merchant_4_dead.jpg" : "assets/Final Picks/Characters/frog_merchant_5_dead.jpg";
     this.sharedService.hasKilledFae = true;
   }
 

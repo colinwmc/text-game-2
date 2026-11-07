@@ -58,12 +58,12 @@ export class RiddleTellerComponent implements OnInit {
     this.options = [{ id: 0, text: 'Continue >' }];
     let right = new Audio();
     this.right = right;
-    right.src = "../assets/Sound Effects/correct.mp3";
+    right.src = "assets/Sound Effects/correct.mp3";
     right.load();
 
     let wrong = new Audio();
     this.wrong = wrong;
-    wrong.src = "../assets/Sound Effects/wrong.mp3";
+    wrong.src = "assets/Sound Effects/wrong.mp3";
     wrong.load();
   }
 
@@ -101,7 +101,7 @@ export class RiddleTellerComponent implements OnInit {
         break;
       case 2:
         this.narration = '';
-        this.portraitID = "../../assets/Final Picks/Characters/riddle_teller.jpeg";
+        this.portraitID = "assets/Final Picks/Characters/riddle_teller.jpeg";
         let dialogue1 = '"My, my, my. What have we here? A strange little ';
         let type = this.PC.pcid === 1 ? 'skellington' : this.PC.pcid === 2 ? 'elf' : 'dwarf';
         let dialogue2 = ' so far from home. Come to me with eyes filled with dreams ';

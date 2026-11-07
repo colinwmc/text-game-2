@@ -14,6 +14,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Deploy to GitHub Pages
+
+The `Deploy to GitHub Pages` workflow builds the app for this repository's project-site path and deploys it when changes are pushed to `main`. In the repository settings, open **Pages** and set **Build and deployment** to **GitHub Actions**. You can also start a deployment from the workflow's **Run workflow** button.
+
+The app uses hash-based routes so game pages continue to work when opened directly or refreshed on GitHub Pages.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).

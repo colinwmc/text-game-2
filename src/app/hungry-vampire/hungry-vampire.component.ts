@@ -83,7 +83,7 @@ export class HungryVampireComponent implements OnInit {
   }
 
   npcDies() {
-    this.portraitID = "../../assets/Final Picks/Characters/hungry_vampire_dead.png"
+    this.portraitID = "assets/Final Picks/Characters/hungry_vampire_dead.png"
   }
 
   optionSelection(event: any) {
@@ -103,7 +103,7 @@ export class HungryVampireComponent implements OnInit {
         break;
       case 3:
         this.narration = '';
-        this.portraitID = "../../assets/Final Picks/Characters/hungry_vampire.png";
+        this.portraitID = "assets/Final Picks/Characters/hungry_vampire.png";
         this.npcDialogue('"H-hi . . ."');
         this.options = [
           { id: 5, text: '"Hello there ma\'am. Are you ok?"' },
@@ -522,7 +522,7 @@ export class HungryVampireComponent implements OnInit {
       case 38:
         this.PC.currentHealth = this.PC.hp;
         let heal = new Audio();
-        heal.src = '../assets/Sound Effects/heal.mp3';
+        heal.src = 'assets/Sound Effects/heal.mp3';
         heal.load();
         heal.play();
         this.npcDialogue('"Goodbye, friend."');
@@ -539,7 +539,7 @@ export class HungryVampireComponent implements OnInit {
         let outcome1 = this.sharedService.castAttackSpell(3, 12, 'none');
         if (outcome1 === 'frog') {
           this.dialogue.unshift('(Hit!) You press your hand against her head and release a point blank magical hex. Her body is twisted and morphed into a frog!');
-          this.portraitID = "../../assets/Final Picks/Characters/hex-frog.jpg";
+          this.portraitID = "assets/Final Picks/Characters/hex-frog.jpg";
           this.options = [
             { id: 31, text: '"Well, I hope you have a nicer time eating bugs than blood." You say, sadly marching on.' },
             { id: 31, text: '"Welp, smell ya later," you say, striding onward.' }
@@ -553,7 +553,7 @@ export class HungryVampireComponent implements OnInit {
           ]
         } else if (outcome1 === 'purple') {
           this.dialogue.unshift('(Hit!) You press your hand against her head and release a point blank magical hex. You notice the woman\'s skin turn purple, but it does nothing to deter her. She continues her assault.');
-          this.portraitID = "../../assets/Final Picks/Characters/hungry_vampire_purple.png";
+          this.portraitID = "assets/Final Picks/Characters/hungry_vampire_purple.png";
           if (event.id === 40) {
             this.options = [
               { id: 28, text: '"GET OFF OF ME OR I\'LL DESTORY YOU!" (Charisma Intimidation Check)' },

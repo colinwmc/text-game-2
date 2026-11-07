@@ -64,7 +64,7 @@ export class TempleComponent implements OnInit {
   }
 
   npcDies() {
-    this.portraitID = "../../assets/Final Picks/Characters/fae_princess_dead.jpg";
+    this.portraitID = "assets/Final Picks/Characters/fae_princess_dead.jpg";
     this.sharedService.hasKilledFae = true;
   }
 
@@ -92,7 +92,7 @@ export class TempleComponent implements OnInit {
         this.options = [{ id: 3, text: 'Pick up the box.' }];
         break;
       case 3:
-        this.portraitID = "../../assets/Final Picks/Item and Spell Icons/artifact.jpg";
+        this.portraitID = "assets/Final Picks/Item and Spell Icons/artifact.jpg";
         this.narration = '';
         this.dialogue.unshift('You grasp the box in your hands, turning it over this way and that as you examine it. It fits the sketch given to you by the fortune teller exactly.');
         this.options = [
@@ -109,7 +109,7 @@ export class TempleComponent implements OnInit {
         ];
         break;
       case 5:
-        this.portraitID = "../../assets/Final Picks/Characters/fae_princess.jpg";
+        this.portraitID = "assets/Final Picks/Characters/fae_princess.jpg";
         this.dialogue.unshift('You see before you a peculiar figure in a stately gown. Her hands are folded neatly in front of her and butterflies float around her peacefully. The expression in her large, round eyes is difficult to read.');
         this.options = [
           { id: 6, text: '"Who are you?"' },
@@ -491,7 +491,7 @@ export class TempleComponent implements OnInit {
         break;
       case 52:
         let hex = new Audio();
-        hex.src = '../assets/Sound Effects/hex.mp3';
+        hex.src = 'assets/Sound Effects/hex.mp3';
         hex.load();
         hex.play();
         this.npcDies();
@@ -504,7 +504,7 @@ export class TempleComponent implements OnInit {
         break;
       case 53:
         let ice = new Audio();
-        ice.src = '../assets/Sound Effects/ice-blast.mp3';
+        ice.src = 'assets/Sound Effects/ice-blast.mp3';
         ice.load();
         ice.play();
         this.npcDies();
@@ -517,11 +517,11 @@ export class TempleComponent implements OnInit {
         break;
       case 54:
         let swing = new Audio();
-        swing.src = '../assets/Sound Effects/hammer-swing.mp3';
+        swing.src = 'assets/Sound Effects/hammer-swing.mp3';
         swing.load();
         swing.play();
         let hit = new Audio();
-        hit.src = '../assets/Sound Effects/hammer-hit.mp3';
+        hit.src = 'assets/Sound Effects/hammer-hit.mp3';
         hit.load();
         hit.play();
         this.npcDies();
@@ -560,13 +560,13 @@ export class TempleComponent implements OnInit {
         break;
       case 59:
         let unlock = new Audio();
-        unlock.src = '../assets/Sound Effects/unlock.mp3';
+        unlock.src = 'assets/Sound Effects/unlock.mp3';
         unlock.load();
         setTimeout(() => {
           unlock.play();
         }, 500);
         let glow = new Audio();
-        glow.src = '../assets/Sound Effects/aura.mp3';
+        glow.src = 'assets/Sound Effects/aura.mp3';
         glow.load();
         setTimeout(() => {
           glow.play();
@@ -578,7 +578,7 @@ export class TempleComponent implements OnInit {
         this.router.navigate(['/outro']);
         break;
       case 61:
-        this.portraitID = "../../assets/Final Picks/Characters/fae_queen.jpg";
+        this.portraitID = "assets/Final Picks/Characters/fae_queen.jpg";
         this.npcTag = 'Fae Queen: ';
         this.dialogue.unshift('When the blinding light dissapates you see a strange figure coalesce in front of you. Wings, leaves, antlers, hair, tentacles, an amalgamation of a million differnt things. And in your heart you feel an indescribable mixture of emotion. You\'re awed, entranced, terrified, weirdly aroused.');
         this.options = [
@@ -616,7 +616,7 @@ export class TempleComponent implements OnInit {
       case 65:
         this.addPCDialogue(event.text);
         this.dialogue.unshift('The Queen raises a hand and magical sparkles pour out from it, surrounding you. You look down at your hands to see flesh begin to cover your spindly fingers, and, for the first time in as long as you can remember, you feel the warmth of blood coursing through your veins.');
-        this.PC.image_URL = '../../assets/Final Picks/Characters/pollen_human.png';
+        this.PC.image_URL = 'assets/Final Picks/Characters/pollen_human.png';
         this.options = [{ id: 69, text: 'Turn to look at Priscilla.' }]
         break;
       case 66:
@@ -652,7 +652,7 @@ export class TempleComponent implements OnInit {
         }
         break;
       case 69:
-        this.portraitID = "../../assets/Final Picks/Characters/Priscilla.jpg";
+        this.portraitID = "assets/Final Picks/Characters/Priscilla.jpg";
         this.dialogue.unshift('You see a young woman standing before you. She looks up into your eyes and smiles softly.');
         this.options = [{
           id: 70, text: '"Priscilla . . . I\'m so sorry. It was an accident. I tried to fix it."'
@@ -666,8 +666,8 @@ export class TempleComponent implements OnInit {
         break;
       case 71:
         this.npcTag = 'Fae Queen: ';
-        this.portraitID = "../../assets/Final Picks/Characters/fae_queen.jpg";
-        this.PC.image_URL = '../../assets/Final Picks/Characters/pollen_and_priscilla.png';
+        this.portraitID = "assets/Final Picks/Characters/fae_queen.jpg";
+        this.PC.image_URL = 'assets/Final Picks/Characters/pollen_and_priscilla.png';
         this.npcDialogue('"Go in peace my children."');
         this.options = [
           { id: 60, text: '"Thank you, your highness. We shall never forget you," you say as you turn to leave.' }

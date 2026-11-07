@@ -14,7 +14,7 @@ export class TitleScreenComponent implements OnInit {
   public index = 0;
   public PCs: any;
   public selectedPC: any;
-  public image ="../../assets/Final Picks/Characters/bartender.png";
+  public image ="assets/Final Picks/Characters/bartender.png";
 
   ngOnInit(): void {
    

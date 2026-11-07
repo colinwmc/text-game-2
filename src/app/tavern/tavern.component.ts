@@ -85,7 +85,7 @@ export class TavernComponent implements OnInit {
     switch (event.ID) {
       case 'TV0':
         this.narration = '';
-        this.portraitID = "../../assets/Final Picks/Characters/bartender.png";
+        this.portraitID = "assets/Final Picks/Characters/bartender.png";
         if (this.PC.pcid === 1) {
           this.dialogue.unshift('Bartender: "What do you need? We . . . Don\'t want any trouble."');
           this.options = [

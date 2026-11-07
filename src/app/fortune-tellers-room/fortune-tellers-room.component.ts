@@ -75,7 +75,7 @@ export class FortuneTellersRoomComponent implements OnInit {
     let npcTag = 'Madame LeSoule: ';
     switch (event.id) {
       case 0:
-        this.portraitID = "../../assets/Final Picks/Characters/fortune_teller.png";
+        this.portraitID = "assets/Final Picks/Characters/fortune_teller.png";
         this.narration = '';
         this.dialogue.unshift(npcTag + '"Hello, my dear. Please, take a seat."');
         this.options = [
@@ -102,7 +102,7 @@ export class FortuneTellersRoomComponent implements OnInit {
           this.addPCDialogue(event.text);
           let opening = event.id === 3 ? '"Such an altruistic soul, aren\'t you?" She says with a slight smirk. ' : event.id === 4 ? '"Yes, I\'m not surprised that caught your attention." She says, dryly. ' : '"Well you certainly didn\'t walk all this way just for a light chat, did you sweetheart?" She says, arching an eyebrow in your direction. ';
           this.dialogue.unshift(npcTag + opening + '"As you can imagine this artifact is an object of great importance to me. Proportionate to its reward. What you\'re searching for is going to look like this." She holds out a yellowed piece of parchment, on it a drawing of a small, wooden box. Its lid and front engraved with emblems. On the side, it appears sealed by a basic metal latch.');
-          this.portraitID = "../../assets/Final Picks/Item and Spell Icons/artifact-sketch.png";
+          this.portraitID = "assets/Final Picks/Item and Spell Icons/artifact-sketch.png";
         }
         if (event.id === 12) {
           this.addPCDialogue(event.text);
@@ -124,7 +124,7 @@ export class FortuneTellersRoomComponent implements OnInit {
       case 6:
         this.hasAskedAboutNature = true;
         this.addPCDialogue(event.text);
-        this.portraitID = "../../assets/Final Picks/Characters/fortune_teller.png";
+        this.portraitID = "assets/Final Picks/Characters/fortune_teller.png";
         this.dialogue.unshift(npcTag + '"Let\'s call it a . . . family heirloom. An object of great *sentimental* value to me."');
         this.options = [];
         if (this.hasIdentifiedEmblem) {
@@ -143,7 +143,7 @@ export class FortuneTellersRoomComponent implements OnInit {
         break;
       case 7:
         this.hasAskedAboutMisplacement = true;
-        this.portraitID = "../../assets/Final Picks/Characters/fortune_teller.png";
+        this.portraitID = "assets/Final Picks/Characters/fortune_teller.png";
         this.addPCDialogue(event.text);
         this.dialogue.unshift(npcTag + '"I have certain . . . adversaries within the woods nearby. It was stolen from me."')
         this.options = [];
@@ -181,7 +181,7 @@ export class FortuneTellersRoomComponent implements OnInit {
         }
         break;
       case 9:
-        this.portraitID = "../../assets/Final Picks/Characters/fortune_teller.png";
+        this.portraitID = "assets/Final Picks/Characters/fortune_teller.png";
         this.addPCDialogue(event.text);
         this.dialogue.unshift(npcTag + '"You will journey into the forest. You will find, near its center, a temple. You will enter it, and retrieve the box. You will return it to me and collect your reward."');
         this.options = [];
@@ -258,7 +258,7 @@ export class FortuneTellersRoomComponent implements OnInit {
       case 20:
         this.addPCDialogue(event.text);
         let shuffle = new Audio();
-        shuffle.src = "../assets/Sound Effects/shuffling-cards-74757.mp3";
+        shuffle.src = "assets/Sound Effects/shuffling-cards-74757.mp3";
         shuffle.load();
         shuffle.play();
         this.dialogue.unshift(npcTag + '"Let\'s look to the cards," she says, shuffling the deck in her hands, "See if they can reveal any of the perils you may face."');
@@ -268,35 +268,35 @@ export class FortuneTellersRoomComponent implements OnInit {
         //shuffle the cards
         // this.shuffleCards();
         // if (this.encounters[0] === 'OF1') {
-        this.portraitID = '../../assets/Final Picks/Tarot Cards/Fool.jpg';
+        this.portraitID = 'assets/Final Picks/Tarot Cards/Fool.jpg';
         this.dialogue.unshift(npcTag + '"The Fool. A figure of innocence, naivete. An unserious individual hoping to be met with trust."');
         // } else {
-        //   this.portraitID = '../../assets/Final Picks/Tarot Cards/Lovers.jpg';
+        //   this.portraitID = 'assets/Final Picks/Tarot Cards/Lovers.jpg';
         //   this.dialogue.unshift(npcTag + '"The Lovers. A card of romance and the heart. Perhaps a chance encounter with a being of passion?" She raises her eyebrows as she looks you in the eye.');
         // }
         this.options = [{ id: 22, text: 'Continue >' }];
         break;
       case 22:
         // if (this.encounters[1] === 'MF1') {
-        //   this.portraitID = '../../assets/Final Picks/Tarot Cards/Tower.jpg';
+        //   this.portraitID = 'assets/Final Picks/Tarot Cards/Tower.jpg';
         //   this.dialogue.unshift(npcTag + '"The Tower. Chaos. Upheaval. A sudden shock forcefully delivered. Perhaps a time for . . . purging." She chuckles under her breath.');
         // } else {
-        //   this.portraitID = '../../assets/Final Picks/Tarot Cards/Pents06.jpg';
+        //   this.portraitID = 'assets/Final Picks/Tarot Cards/Pents06.jpg';
         //   this.dialogue.unshift(npcTag + '"The Six of Pentacles. A sign of charity and support for the struggling. A chance to give to the less fortunate. But also be mindful of the scales. Is there balance in what you give and receive?"');
         // }
-        this.portraitID = '../../assets/Final Picks/Tarot Cards/Lovers.jpg';
+        this.portraitID = 'assets/Final Picks/Tarot Cards/Lovers.jpg';
         this.dialogue.unshift(npcTag + '"The Lovers. A card of romance and the heart. Perhaps a chance encounter with a being of passion?" She raises her eyebrows as she looks you in the eye.');
         this.options = [{ id: 23, text: 'Continue >' }];
         break;
       case 23:
         // if (this.encounters[2] === 'DF1') {
-        //   this.portraitID = '../../assets/Final Picks/Tarot Cards/Swords08.jpg';
+        //   this.portraitID = 'assets/Final Picks/Tarot Cards/Swords08.jpg';
         //   this.dialogue.unshift(npcTag + '"The Eight of Swords. A symbol of being trapped, helpless, lost.But how tightly are the ropes bound, and by whom? Do we sometimes allow ourselves to play the victim in our own minds?"');
         // } else {
-        //   this.portraitID = '../../assets/Final Picks/Tarot Cards/Cups07.jpg';
+        //   this.portraitID = 'assets/Final Picks/Tarot Cards/Cups07.jpg';
         //   this.dialogue.unshift(npcTag + '"The Seven of Cups. A symbol of the endless possibilities of our imaginations. A card of wonder and awe, but also illusion. Will your head be caught in the clouds.?"');
         // }
-        this.portraitID = '../../assets/Final Picks/Tarot Cards/Pents06.jpg';
+        this.portraitID = 'assets/Final Picks/Tarot Cards/Pents06.jpg';
         this.dialogue.unshift(npcTag + '"The Six of Pentacles. A sign of charity and support for the struggling. A chance to give to the less fortunate. But also be mindful of the scales. Is there balance in what you give and receive?"');
         this.options = [
           { id: 24, text: '"Uh . . . wut?"' },
@@ -304,7 +304,7 @@ export class FortuneTellersRoomComponent implements OnInit {
           { id: 24, text: '""I\'ll be honest with you ma\'am, I\'m not sure what to make of that." You say scratching your head.' }];
         break;
       case 24:
-        this.portraitID = "../../assets/Final Picks/Characters/fortune_teller.png";
+        this.portraitID = "assets/Final Picks/Characters/fortune_teller.png";
         this.addPCDialogue(event.text);
         this.dialogue.unshift(npcTag + '"All of these things and more you will encounter in the night to come, though I can do no more to prepare you to face them." She says, solemnly as she collects the cards back into the deck.');
         this.options = [

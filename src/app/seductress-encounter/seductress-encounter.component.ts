@@ -77,7 +77,7 @@ export class SeductressEncounterComponent implements OnInit {
   }
 
   npcDies() {
-    this.portraitID = "../../assets/Final Picks/Characters/seductress_dead.jpg";
+    this.portraitID = "assets/Final Picks/Characters/seductress_dead.jpg";
     this.sharedService.hasKilledFae = true;
   }
 
@@ -100,7 +100,7 @@ export class SeductressEncounterComponent implements OnInit {
         break;
       case 2:
         this.narration = '';
-        this.portraitID = "../../assets/Final Picks/Characters/seductress.jpeg";
+        this.portraitID = "assets/Final Picks/Characters/seductress.jpeg";
         this.npcDialogue('"Well who do we have here?" The woman purrs in a whispered voice. The singing in your head doesn\'t stop as she begins to speak. "And what brings you across my little oasis?"');
         this.options = [
           { id: 3, text: '"I\'m on a quest. A very serious mission that will take me deep into the forest."' },
@@ -430,7 +430,7 @@ export class SeductressEncounterComponent implements OnInit {
           }
         } else {
           let slap = new Audio();
-          slap.src = "../assets/Sound Effects/slap.mp3";
+          slap.src = "assets/Sound Effects/slap.mp3";
           slap.load();
           slap.play();
           this.sharedService.takeDamage(5);
@@ -450,7 +450,7 @@ export class SeductressEncounterComponent implements OnInit {
         break;
       case 40:
         let slap = new Audio();
-        slap.src = "../assets/Sound Effects/slap.mp3";
+        slap.src = "assets/Sound Effects/slap.mp3";
         slap.load();
         slap.play();
         this.sharedService.takeDamage(5);
@@ -503,7 +503,7 @@ export class SeductressEncounterComponent implements OnInit {
         let outcome = this.sharedService.castAttackSpell(3, 10, !this.isSatOnRock ? 'advantage' : !this.isSatClose ? 'none' : 'disadvantage')
         if (outcome === 'frog') {
           this.dialogue.unshift('(Hit!) A bolt of magic flies from your fingertips and hits her in the chest. Her body is twisted and morphed into a frog!.');
-          this.portraitID = "../../assets/Final Picks/Characters/hex-frog.jpg";
+          this.portraitID = "assets/Final Picks/Characters/hex-frog.jpg";
           this.options = [
             { id: 50, text: '"Well, at least you have a nice pond to live in here." You saying striding deeper into the woods.' },
             { id: 50, text: '"Not so pretty now, are ya \'sweetie?\'" You continue on into the forest.' }
@@ -518,7 +518,7 @@ export class SeductressEncounterComponent implements OnInit {
           ]
         } else if (outcome === 'purple') {
           this.dialogue.unshift('(Hit!) A bolt of magic flies from your fingertips and hits her in the chest. The woman\'s eyes light up in terror. Feeling strange, she looks at herself in the reflection of the water. "I\'m  . . . PURPLE?! My flawless skin is PURPLE?!?!" She turns her face to you, untamed fury in her eyes.');
-          this.portraitID = "../../assets/Final Picks/Characters/seductress_purple.jpg"
+          this.portraitID = "assets/Final Picks/Characters/seductress_purple.jpg"
           this.options = [
             { id: 49, text: '"Oh dear . . ."' }
           ];
@@ -649,7 +649,7 @@ export class SeductressEncounterComponent implements OnInit {
         let outcome1 = this.sharedService.castAttackSpell(3, 10, 'none');
         if (outcome1 === 'frog') {
           this.dialogue.unshift('(Hit!) You press your hand against her head and release a point blank magical hex. Her body is twisted and morphed into a frog!');
-          this.portraitID = "../../assets/Final Picks/Characters/hex-frog.jpg";
+          this.portraitID = "assets/Final Picks/Characters/hex-frog.jpg";
           this.options = [
             { id: 50, text: '"Well, at least you have a nice pond to live in here." You saying striding deeper into the woods.' },
             { id: 50, text: '"Not so pretty now, are ya \'sweetie?\'" You continue on into the forest.' }
@@ -664,7 +664,7 @@ export class SeductressEncounterComponent implements OnInit {
           ]
         } else if (outcome1 === 'purple') {
           this.dialogue.unshift('(Hit!) You press your hand against her head and release a point blank magical hex. Out of the corner of your eye, you notice the woman\'s skin turn purple, but it does nothing to deter her from her meal. You feel her teeth bite into your head as it\'s wrenched from your body.');
-          this.portraitID = "../../assets/Final Picks/Characters/seductress_purple.jpg"
+          this.portraitID = "assets/Final Picks/Characters/seductress_purple.jpg"
           this.options = [{ id: 56, text: '"AAAAAAAAHHHHHHH!!!!!!!"' }];
         } else {
           this.dialogue.unshift('(Miss!) You try to steel yourself to cast the spell, but with your head in her mouth your hand shoots out wildly, sending the hex bolt into the trees. You feel her teeth bite into your head as it\'s wrenched from your body.');

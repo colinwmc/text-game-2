@@ -50,17 +50,17 @@ export class MothMonsterComponent implements OnInit {
     this.options = [{ id: 0, text: 'Continue >' }];
     let strings = new Audio();
     this.surprise = strings;
-    strings.src = "../assets/Sound Effects/surprise.mp3";
+    strings.src = "assets/Sound Effects/surprise.mp3";
     strings.load();
 
     let fart = new Audio();
     this.fart = fart;
-    fart.src = "../assets/Sound Effects/fart.mp3";
+    fart.src = "assets/Sound Effects/fart.mp3";
     fart.load();
 
     let skelly = new Audio();
     this.skelly = skelly;
-    skelly.src = "../assets/Sound Effects/Xylophone Quick Gliss Down.mp3";
+    skelly.src = "assets/Sound Effects/Xylophone Quick Gliss Down.mp3";
     skelly.load();
   }
 

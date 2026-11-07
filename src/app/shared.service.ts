@@ -38,7 +38,7 @@ export class SharedService {
     "armorClass": 13,
     "hp": 14,
     "characterDescription": "Resembling the magically reanimated bones of a humanoid creature, no one knows how or why Skellingtons come to be, not even the Skellingtons themselves. A rare creature most often seen in remote regions, such as forests, swamps, or deserts, they are widely considered to be ill omens and not warmly welcomed by other sentient creatures. This particular Skellington has made their home in the deep forests of the Fae Wildes for many years, enjoying only the company of raccoons and the occasional crow. All the while studying the ancient rites of witchcraft.",
-    "image_URL": "../../assets/Final Picks/Characters/pollen.png",
+    "image_URL": "assets/Final Picks/Characters/pollen.png",
     "spells": [
       {
         "spellId": 1,
@@ -49,7 +49,7 @@ export class SharedService {
         "spellEffect": "Heal",
         "effectQuantity": 7,
         "pcid": 1,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/healing-mist.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/healing-mist.png"
       },
       {
         "spellId": 2,
@@ -60,7 +60,7 @@ export class SharedService {
         "spellEffect": "CC",
         "effectQuantity": 0,
         "pcid": 1,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/illusion.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/illusion.png"
       },
       {
         "spellId": 3,
@@ -71,14 +71,14 @@ export class SharedService {
         "spellEffect": "CC",
         "effectQuantity": 0,
         "pcid": 1,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/hex.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/hex.png"
       }
     ],
     "items": [
       {
         "itemID": 1,
         "itemName": "Adult Female Raccoon",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/priscilla.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/priscilla.png",
         "itemDescription": "Her name’s Priscilla",
         "itemQuantity": 1,
         "pcid": 1
@@ -86,7 +86,7 @@ export class SharedService {
       {
         "itemID": 2,
         "itemName": "Bag of Pretty Rocks",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/rock_bag.jpeg",
+        "imageID": "assets/Final Picks/Item and Spell Icons/rock_bag.jpeg",
         "itemDescription": "You gotta pick up a pretty looking rock",
         "itemQuantity": 1,
         "pcid": 1
@@ -94,7 +94,7 @@ export class SharedService {
       {
         "itemID": 3,
         "itemName": "Wild Mushrooms",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/mushrooms.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/mushrooms.png",
         "itemDescription": "Are they edible? poisonous? psychedelic? You don’t know",
         "itemQuantity": 3,
         "pcid": 1
@@ -102,7 +102,7 @@ export class SharedService {
       {
         "itemID": 4,
         "itemName": "Wildberries",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/berries.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/berries.png",
         "itemDescription": "In case Priscilla needs a little treat",
         "itemQuantity": 10,
         "pcid": 1
@@ -128,7 +128,7 @@ export class SharedService {
     "armorClass": 12,
     "hp": 16,
     "characterDescription": "A wizard and scholar in equal measure. Starting from humble beginnings as a wood elf in the rural MiddleWest region of the kingdom, Dizbert received an advanced degree in the Mystic Farts from the prestigious Coastal Academy School of Farts and Sciences. An analytical mind, a member of 3 book clubs and an amateur botanist, any problem she can’t solve with critical thinking she can probably solve with a blast of elemental magic. ",
-    "image_URL": "../../assets/Final Picks/Characters/dizbert.png",
+    "image_URL": "assets/Final Picks/Characters/dizbert.png",
     "spells": [
       {
         "spellId": 4,
@@ -139,7 +139,7 @@ export class SharedService {
         "spellEffect": "Damage",
         "effectQuantity": 7,
         "pcid": 2,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/ice-blast.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/ice-blast.png"
       },
       {
         "spellId": 5,
@@ -150,7 +150,7 @@ export class SharedService {
         "spellEffect": "CC",
         "effectQuantity": 0,
         "pcid": 2,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/green-thumb.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/green-thumb.png"
       },
       {
         "spellId": 6,
@@ -161,14 +161,14 @@ export class SharedService {
         "spellEffect": "CC",
         "effectQuantity": 0,
         "pcid": 2,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/stinking-cloud.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/stinking-cloud.png"
       }
     ],
     "items": [
       {
         "itemID": 5,
         "itemName": "Encyclopedia Arcanica",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/encyclopedia-arcanica.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/encyclopedia-arcanica.png",
         "itemDescription": "The ultimate mystical reference",
         "itemQuantity": 1,
         "pcid": 2
@@ -176,7 +176,7 @@ export class SharedService {
       {
         "itemID": 6,
         "itemName": "Golden Delicious Apple",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/apple.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/apple.png",
         "itemDescription": "It's golden, it's delicious, it's an apple",
         "itemQuantity": 1,
         "pcid": 2
@@ -184,7 +184,7 @@ export class SharedService {
       {
         "itemID": 7,
         "itemName": "Potion of Enhanced Stinking Cloud",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/potion-of-enhanced-stinking-cloud.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/potion-of-enhanced-stinking-cloud.png",
         "itemDescription": "Greatly enhances the power of the Stinking Cloud spell. May cause it to be cast involuntarily.",
         "itemQuantity": 1,
         "pcid": 2
@@ -192,7 +192,7 @@ export class SharedService {
       {
         "itemID": 8,
         "itemName": "45 Carat Diamond Ring",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/ring.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/ring.png",
         "itemDescription": "Ooh, shiny",
         "itemQuantity": 1,
         "pcid": 2
@@ -218,7 +218,7 @@ export class SharedService {
     "armorClass": 14,
     "hp": 18,
     "characterDescription": "Tomja proudly hails from the Dwarven Kingdom of Ohio. He studied classic Dwarven Engineering at a local state funded university, and still talks about it a lot, considering he graduated, like, 20 years ago. Probably would’ve gone pro in Dwarf Ball (a sport no other species has yet figured out) if it hadn’t been for an ill timed ankle injury (ankles are very important to Dwarves, they’re like, 25% of their legs). Has taken to a life of adventuring in an attempt to pay off his massive gambling debts.",
-    "image_URL": "../../assets/Final Picks/Characters/tomja.png",
+    "image_URL": "assets/Final Picks/Characters/tomja.png",
     "spells": [
       {
         "spellId": 7,
@@ -229,7 +229,7 @@ export class SharedService {
         "spellEffect": "Damage",
         "effectQuantity": 10,
         "pcid": 3,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/bomb.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/bomb.png"
       },
       {
         "spellId": 8,
@@ -240,7 +240,7 @@ export class SharedService {
         "spellEffect": "CC",
         "effectQuantity": 0,
         "pcid": 3,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/mend.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/mend.png"
       },
       {
         "spellId": 9,
@@ -251,14 +251,14 @@ export class SharedService {
         "spellEffect": "Damage",
         "effectQuantity": 7,
         "pcid": 3,
-        "icon_URL": "../../assets/Final Picks/Item and Spell Icons/big-ol-hammer.png"
+        "icon_URL": "assets/Final Picks/Item and Spell Icons/big-ol-hammer.png"
       }
     ],
     "items": [
       {
         "itemID": 9,
         "itemName": "Big Ol’ Hammer",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/big-ol-hammer.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/big-ol-hammer.png",
         "itemDescription": "Great for fixing, or breaking things",
         "itemQuantity": 1,
         "pcid": 3
@@ -266,7 +266,7 @@ export class SharedService {
       {
         "itemID": 10,
         "itemName": "Dwarven Fire Bomb",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/bomb.png",
+        "imageID": "assets/Final Picks/Item and Spell Icons/bomb.png",
         "itemDescription": "Blows up. Sets things on fire.",
         "itemQuantity": 3,
         "pcid": 3
@@ -274,7 +274,7 @@ export class SharedService {
       {
         "itemID": 11,
         "itemName": "Cask of Dwarven Ale",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/dwarven-ale.jpg",
+        "imageID": "assets/Final Picks/Item and Spell Icons/dwarven-ale.jpg",
         "itemDescription": "Adventuring is thirsty work",
         "itemQuantity": 1,
         "pcid": 3
@@ -282,7 +282,7 @@ export class SharedService {
       {
         "itemID": 12,
         "itemName": "Pouch of Screws and Lugnuts",
-        "imageID": "../../assets/Final Picks/Item and Spell Icons/nuts_and_bolts.jpeg",
+        "imageID": "assets/Final Picks/Item and Spell Icons/nuts_and_bolts.jpeg",
         "itemDescription": "Never know when you're gonna need 'em",
         "itemQuantity": 1,
         "pcid": 3
@@ -327,7 +327,7 @@ export class SharedService {
 
   skillCheck(modifier: string, dc: number, special: string) {
     let diceRoll = new Audio();
-    diceRoll.src = "../assets/Sound Effects/rpg-dice-rolling-95182.mp3";
+    diceRoll.src = "assets/Sound Effects/rpg-dice-rolling-95182.mp3";
     diceRoll.load();
     diceRoll.play();
 
@@ -354,7 +354,7 @@ export class SharedService {
     if (gold.itemQuantity >= cost) {
       if (cost !== 0) {
         let moneyClink = new Audio();
-        moneyClink.src = "../assets/Sound Effects/coins-falling-013-36967.mp3";
+        moneyClink.src = "assets/Sound Effects/coins-falling-013-36967.mp3";
         moneyClink.load();
         moneyClink.play();
       }
@@ -376,12 +376,12 @@ export class SharedService {
         case 1:
         case 4:
           let raccon = new Audio();
-          raccon.src = "../assets/Sound Effects/raccoon.mp4";
+          raccon.src = "assets/Sound Effects/raccoon.mp4";
           raccon.load();
           raccon.play();
           if (itemID === 4) {
             let eat = new Audio();
-            eat.src = "../assets/Sound Effects/eating.mp3";
+            eat.src = "assets/Sound Effects/eating.mp3";
             eat.load();
             eat.play();
             this.removeItem(itemID);
@@ -391,7 +391,7 @@ export class SharedService {
         case 14:
         case 16:
           let drink = new Audio();
-          drink.src = "../assets/Sound Effects/glug-glug-glug-39140.mp3";
+          drink.src = "assets/Sound Effects/glug-glug-glug-39140.mp3";
           drink.load();
           drink.play();
           this.removeItem(itemID);
@@ -417,7 +417,7 @@ export class SharedService {
         case 15:
         case 17:
           let eat = new Audio();
-          eat.src = "../assets/Sound Effects/eating.mp3";
+          eat.src = "assets/Sound Effects/eating.mp3";
           eat.load();
           eat.play();
           if (itemID === 15) {
@@ -449,7 +449,7 @@ export class SharedService {
 
   takeDamage(amount: number) {
     let damage = new Audio();
-    damage.src = "../assets/Sound Effects/retro-hurt-2-236675.mp3";
+    damage.src = "assets/Sound Effects/retro-hurt-2-236675.mp3";
     damage.load();
     damage.play();
     this.PC.currentHealth = this.PC.currentHealth - amount;
@@ -481,14 +481,14 @@ export class SharedService {
     switch (id) {
       case 1:
         let heal = new Audio();
-        heal.src = '../assets/Sound Effects/heal.mp3';
+        heal.src = 'assets/Sound Effects/heal.mp3';
         heal.load();
         heal.play();
         return 7;
 
       case 3:
         let hex = new Audio();
-        hex.src = '../assets/Sound Effects/hex.mp3';
+        hex.src = 'assets/Sound Effects/hex.mp3';
         hex.load();
         hex.play();
         if (this.skillCheck('wisdom', dc, special)) {
@@ -501,26 +501,26 @@ export class SharedService {
         }
       case 4:
         let ice = new Audio();
-        ice.src = '../assets/Sound Effects/ice-blast.mp3';
+        ice.src = 'assets/Sound Effects/ice-blast.mp3';
         ice.load();
         ice.play();
         return this.skillCheck('intelligence', dc, special);
       case 5:
         let green = new Audio();
-        green.src = '../assets/Sound Effects/green-thumb.mp3';
+        green.src = 'assets/Sound Effects/green-thumb.mp3';
         green.load();
         green.play();
         return true;
 
       case 9:
         let swing = new Audio();
-        swing.src = '../assets/Sound Effects/hammer-swing.mp3';
+        swing.src = 'assets/Sound Effects/hammer-swing.mp3';
         swing.load();
         swing.play();
 
         if (this.skillCheck('strength', dc, special)) {
           let hit = new Audio();
-          hit.src = '../assets/Sound Effects/hammer-hit.mp3';
+          hit.src = 'assets/Sound Effects/hammer-hit.mp3';
           hit.load();
           hit.play();
           return true;
@@ -530,7 +530,7 @@ export class SharedService {
 
       case 8:
         let mend = new Audio();
-        mend.src = '../assets/Sound Effects/mend.mp3';
+        mend.src = 'assets/Sound Effects/mend.mp3';
         mend.load();
         mend.play();
         return true;
@@ -541,7 +541,7 @@ export class SharedService {
 
   castSaveSpell(id: number, modifier: number, special: string) {
     let diceRoll = new Audio();
-    diceRoll.src = "../assets/Sound Effects/rpg-dice-rolling-95182.mp3";
+    diceRoll.src = "assets/Sound Effects/rpg-dice-rolling-95182.mp3";
     diceRoll.load();
     diceRoll.play();
 
@@ -560,14 +560,14 @@ export class SharedService {
     switch (id) {
       case 2:
         let illusion = new Audio();
-        illusion.src = '../assets/Sound Effects/illusion.mp3';
+        illusion.src = 'assets/Sound Effects/illusion.mp3';
         illusion.load();
         illusion.play();
         return (roll + modifier) < Math.floor((this.PC.wisdom - 10) / 2) + 10;
 
       case 6:
         let cloud = new Audio();
-        cloud.src = !this.PC.enhancedStink ? '../assets/Sound Effects/fart.mp3' : '../assets/Sound Effects/enhanced-fart.mp3';
+        cloud.src = !this.PC.enhancedStink ? 'assets/Sound Effects/fart.mp3' : 'assets/Sound Effects/enhanced-fart.mp3';
         cloud.load();
         cloud.play();
         if (this.PC.enhancedStink) {
@@ -579,7 +579,7 @@ export class SharedService {
 
       case 7:
         let bomb = new Audio();
-        bomb.src = '../assets/Sound Effects/bomb.mp3';
+        bomb.src = 'assets/Sound Effects/bomb.mp3';
         bomb.load();
         bomb.play();
         this.removeItem(10);
