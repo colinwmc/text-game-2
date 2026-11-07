@@ -1,6 +1,6 @@
-<div class="menu-wrapper">
+<div class="menu-wrapper" (click)="startMusic()">
 
-    <audio src="assets/Music/Fairy Lands FANTASY MUSIC in a Magical Forest Fantasy Ambience.mp3" autoplay></audio>
+    <audio #titleMusic src="assets/Music/Fairy Lands FANTASY MUSIC in a Magical Forest Fantasy Ambience.mp3"></audio>
     <div class="menu-background">
         <img *ngIf="index===0" (click)="menuAdvance()" src="assets/Final Picks/Locations/title_final.jpg" alt="">
         <img *ngIf="index===1 || index===2" src="assets/Final Picks/Locations/menu_final.jpeg" alt="">

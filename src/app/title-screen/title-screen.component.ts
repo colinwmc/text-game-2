@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SharedService } from '../shared.service';
 import { item } from '../models';
 
@@ -10,6 +10,8 @@ import { item } from '../models';
 export class TitleScreenComponent implements OnInit {
 
   constructor(private sharedService: SharedService) { }
+
+  @ViewChild('titleMusic') private titleMusic?: ElementRef<HTMLAudioElement>;
 
   public index = 0;
   public PCs: any;
@@ -32,6 +34,17 @@ export class TitleScreenComponent implements OnInit {
         PC.items.push(gold)
       }
      
+  }
+
+  startMusic(): void {
+    const audio = this.titleMusic?.nativeElement;
+    if (!audio || !audio.paused) {
+      return;
+    }
+
+    void audio.play().catch(error => {
+      console.error('Unable to play title screen music.', error);
+    });
   }
 
   menuAdvance() {
