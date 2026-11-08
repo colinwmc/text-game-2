@@ -20,19 +20,20 @@ export class RiddleTellerComponent implements OnInit {
   public npcTag = 'Temple Guard: ';
   public hasAcknowledgedPoop = false;
   public riddleArray = [
-    { question: '"What gets wetter the more it dries?"', options: [{ id: 20, text: 'b---d' }, { id: 22, text: 't---l' }, { id: 20, text: 'c----t' }, { id: 20, text: 'h--r' }] },
-    { question: '"What tree do we all carry in our hands?"', options: [{ id: 20, text: 'c---r' }, { id: 20, text: 'o-k' }, { id: 20, text: 'e--------s' }, { id: 23, text: 'p--m' }] },
-    { question: '"I can\'t be seen, but I can be heard. I won\'t answer until spoken to. What am I?"', options: [{ id: 20, text: 'd---m' }, { id: 20, text: 'c------n' }, { id: 24, text: 'e--o' }, { id: 20, text: 'v---e' }] },
-    { question: '"Cut me and I won\'t cry, but you will. What am I?"', options: [{ id: 20, text: 's--g' }, { id: 20, text: 's-------t' }, { id: 20, text: 'k---e' }, { id: 25, text: 'o---n' }] },
-    { question: '"If you have it, you want to share it. If you share it, you don\'t have it anymore. What is it?"', options: [{ id: 20, text: 'l--e' }, { id: 20, text: 't----t' }, { id: 26, text: 's-----t' }, { id: 20, text: 'h-------s' }] },
-    { question: '"I have a neck and wear a cap, but I don\'t have a head. What am I?"', options: [{ id: 20, text: 'g---t' }, { id: 27, text: 'b----e' }, { id: 20, text: 's---e' }, { id: 20, text: 'c--m' }] },
-    { question: '"Pick me up and scratch my head. I\'ll turn red and then black. What am I?"', options: [{ id: 28, text: 'm---h' }, { id: 20, text: 'c----e' }, { id: 20, text: 'c---------r' }, { id: 20, text: 'a---l' }] },
-    { question: '"What is as light as a feather but can\'t be held by anyone for very long?"', options: [{ id: 20, text: 't----e p---r' }, { id: 20, text: 'a b--y' }, { id: 20, text: 'y--r w--d' }, { id: 29, text: 'y--r b----h' }] },
-    { question: '"I will crack if you drop me. If you smile at me, I\'ll smile back. What am I?"', options: [{ id: 20, text: 'e-g' }, { id: 30, text: 'm----r' }, { id: 20, text: 'v--e' }, { id: 20, text: 'p----t' }] },
-    { question: '"The more you take, the more you leave behind. What are they?"', options: [{ id: 31, text: 'f-------s' }, { id: 20, text: 'm------s' }, { id: 20, text: 'c---s' }, { id: 20, text: 'p------s' }] },
-    { question: '"What goes up but never comes down?"', options: [{ id: 20, text: 'b---s' }, { id: 32, text: 'a-e' }, { id: 20, text: 'b-----n' }, { id: 20, text: 'd----s' }] },
-    { question: '"What is full of holes but still holds water?"', options: [{ id: 20, text: 'b----t' }, { id: 20, text: 'p-----r' }, { id: 20, text: 'h--e' }, { id: 33, text: 's----e' }] },
+    { question: '"What gets wetter the more it dries?"', options: [{ id: 20, text: 'b---d' }, { id: 22, text: 't---l' }, { id: 20, text: 'c----t' }, { id: 20, text: 'h--r' }], answer: ' 2). towel' },
+    { question: '"What tree do we all carry in our hands?"', options: [{ id: 20, text: 'c---r' }, { id: 20, text: 'o-k' }, { id: 20, text: 'e--------s' }, { id: 23, text: 'p--m' }], answer: ' 4). palm' },
+    { question: '"I can\'t be seen, but I can be heard. I won\'t answer until spoken to. What am I?"', options: [{ id: 20, text: 'd---m' }, { id: 20, text: 'c------n' }, { id: 24, text: 'e--o' }, { id: 20, text: 'v---e' }], answer: ' 3). echo' },
+    { question: '"Cut me and I won\'t cry, but you will. What am I?"', options: [{ id: 20, text: 's--g' }, { id: 20, text: 's-------t' }, { id: 20, text: 'k---e' }, { id: 25, text: 'o---n' }], answer: ' 4). onion' },
+    { question: '"If you have it, you want to share it. If you share it, you don\'t have it anymore. What is it?"', options: [{ id: 20, text: 'l--e' }, { id: 20, text: 't----t' }, { id: 26, text: 's-----t' }, { id: 20, text: 'h-------s' }], answer: ' 3). secret' },
+    { question: '"I have a neck and wear a cap, but I don\'t have a head. What am I?"', options: [{ id: 20, text: 'g---t' }, { id: 27, text: 'b----e' }, { id: 20, text: 's---e' }, { id: 20, text: 'c--m' }], answer: ' 2). bottle' },
+    { question: '"Pick me up and scratch my head. I\'ll turn red and then black. What am I?"', options: [{ id: 28, text: 'm---h' }, { id: 20, text: 'c----e' }, { id: 20, text: 'c---------r' }, { id: 20, text: 'a---l' }], answer: ' 1). match' },
+    { question: '"What is as light as a feather but can\'t be held by anyone for very long?"', options: [{ id: 20, text: 't----e p---r' }, { id: 20, text: 'a b--y' }, { id: 20, text: 'y--r w--d' }, { id: 29, text: 'y--r b----h' }], answer: ' 4). your breath' },
+    { question: '"I will crack if you drop me. If you smile at me, I\'ll smile back. What am I?"', options: [{ id: 20, text: 'e-g' }, { id: 30, text: 'm----r' }, { id: 20, text: 'v--e' }, { id: 20, text: 'p----t' }], answer: ' 2). mirror' },
+    { question: '"The more you take, the more you leave behind. What are they?"', options: [{ id: 31, text: 'f-------s' }, { id: 20, text: 'm------s' }, { id: 20, text: 'c---s' }, { id: 20, text: 'p------s' }], answer: '1). footsteps' },
+    { question: '"What goes up but never comes down?"', options: [{ id: 20, text: 'b---s' }, { id: 32, text: 'a-e' }, { id: 20, text: 'b-----n' }, { id: 20, text: 'd----s' }], answer: '2). age' },
+    { question: '"What is full of holes but still holds water?"', options: [{ id: 20, text: 'b----t' }, { id: 20, text: 'p-----r' }, { id: 20, text: 'h--e' }, { id: 33, text: 's----e' }], answer: '4). sponge' },
   ];
+
   public riddleIndex = 0;
   public rightAnswers = 0;
   public wrongAnswers = 0;
@@ -220,11 +221,13 @@ export class RiddleTellerComponent implements OnInit {
         this.options = [{ id: 19, text: 'Continue >' }];
         break;
       case 19:
+        this.riddleIndex++;
+        this.narration = "Hint: The options give the first and last letter of the answer, with dashes in between for the missing letters.";
         this.npcDialogue(this.riddleArray[this.riddleIndex].question);
         this.options = this.riddleArray[this.riddleIndex].options;
         break;
       case 20:
-        this.riddleIndex++;
+        this.narration = 'Correct answer: ' + this.riddleArray[this.riddleIndex].answer;
         this.wrongAnswers++;
         this.wrong.play();
         if (this.wrongAnswers === 1) {
@@ -253,7 +256,7 @@ export class RiddleTellerComponent implements OnInit {
       case 31:
       case 32:
       case 33:
-        this.riddleIndex++;
+        this.narration = 'Correct answer: ' + this.riddleArray[this.riddleIndex].answer;
         this.rightAnswers++;
         this.right.play();
         let beginning = '"';

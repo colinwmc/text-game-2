@@ -91,6 +91,7 @@
     height: calc(90% - 5px);
     width: 100%;
     border-bottom: 5px solid #253e54;
+    display:block;
 }
 
 .hurting {
